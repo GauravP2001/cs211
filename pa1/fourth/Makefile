@@ -1,0 +1,7 @@
+all: part4
+
+part4: fourth.c
+	gcc -Wall -Werror -fsanitize=address fourth.c -o fourth
+
+clean:
+	rm -f fourth
